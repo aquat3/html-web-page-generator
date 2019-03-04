@@ -37,7 +37,7 @@ public class ListElement extends TagElement implements Element{
 		html+="</li>\n";
 	}
 		 html+=super.getEndTag();
-		}//delete
+		} 
 		else {
 			if(this.attributes!=null)
 			html+=super.getStartTag().replaceAll("ul", "ol").substring(0, 3)+" "+super.getStringId().replaceAll("ul", "ol")+this.attributes+">\n";
